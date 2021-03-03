@@ -39,7 +39,7 @@ Controleer subtitel
 
 Controleer ISBN
     [Arguments]  ${isbn}
-    wait until page contains element  xpath://ul[contains(@class, 'product-small-specs')]//li[contains(., '9780201633610')]  2s
+    wait until page contains element  xpath://ul[contains(@class, 'product-small-specs')]//li[contains(., '${isbn}')]  2s
 
 Controleer product in aanbevolen items
     [Arguments]  ${item}
